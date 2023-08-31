@@ -10,5 +10,5 @@ Pod::Spec.new do |spec|
   spec.source         = { :git => "https://github.com/Healthworx-CareFirst/TurboNavigator.git", :tag => spec.version }
   spec.source_files   = "Sources/**/*.swift"
   spec.resources      = "Sources/**/*.js"
-  spec.dependecy "Turbo"
+  s.dependency "Turbo", :git => "https://github.com/hotwired/turbo-ios.git", :tag => "7.0.0"
 end
