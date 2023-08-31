@@ -7,7 +7,7 @@ Pod::Spec.new do |spec|
   spec.license        = { :type => "MIT", :file => "LICENSE" }
   spec.author         = { "Joe Masilotti" => "joe@masilotti.com" }
   spec.platform       = :ios, "12.0"
-  spec.source         = { :git => "https://github.com/Healthworx-CareFirst/TurboNavigator.git" }
-  spec.source_files   = "Sources/*.swift"
+  spec.source         = { :git => "https://github.com/Healthworx-CareFirst/TurboNavigator.git", :tag => spec.version }
+  spec.source_files   = "Sources/**/*.swift"
   spec.resources      = "Source/**/*.js"
 end
