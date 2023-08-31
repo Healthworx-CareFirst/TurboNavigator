@@ -8,6 +8,6 @@ Pod::Spec.new do |spec|
   spec.author         = { "Joe Masilotti" => "joe@masilotti.com" }
   spec.platform       = :ios, "12.0"
   spec.source         = { :git => "https://github.com/Healthworx-CareFirst/TurboNavigator.git" }
-  spec.source_files   = "Source/*.swift"
+  spec.source_files   = "Sources/*.swift"
   spec.resources      = "Source/**/*.js"
 end
