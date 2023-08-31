@@ -52,6 +52,12 @@ public class TurboNavigator {
             }
         }
     }
+    
+    /// Only works if Session is extending the WKUIDelegate.  Gives the webview that sessions hold a uiDelegate which allows for javascript
+    /// events to be shown in a web view.   Ex. javascript Alert() 
+    public func setUIDelegateForJavascriptActionsOnSession(){
+        self.session.webView.uiDelegate = self.session as? WKUIDelegate
+    }
 
     // MARK: Internal
 
